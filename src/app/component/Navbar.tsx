@@ -19,7 +19,7 @@ const NavBar = () => {
             {/* Bigger Screens */}
             <div className="hidden md:flex items-center justify-between gap-8 h-full">
                 {/* LEFT */}
-                <div className="w-1/3">
+                <div className="w-1/3 xl:w-1/2">
                     <Link href="/">
                         <div>
                             <Image src="/logo-web.svg" alt="" width={100} height={100}/>
@@ -27,7 +27,7 @@ const NavBar = () => {
                     </Link>
                 </div>
                 {/* RIGHT */}
-                <div className="w-2/3 flex items-center justify-between gap-8">
+                <div className="w-2/3 xl:w-1/2 flex items-center justify-between gap-8">
                     <SearchBar />
                     <NavIcons />
                 </div>
