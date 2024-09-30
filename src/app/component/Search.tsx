@@ -1,5 +1,5 @@
 "use client"
-
+//31:21 / 6:00:02
 import Image from "next/image"
 
 const SearchBar = () => {
