@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from 'next/font/google'
 import "./globals.css";
 import NavBar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Head from "next/head";
-const inter = Inter({ subsets: ["latin"] });
+
+const fontFamily = Poppins({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: "E-Commerce Nextjs Wix Headless",
@@ -21,7 +25,7 @@ export default function RootLayout({
        <Head>
         <link rel="icon" href="/logo-web.svg" />
       </Head>
-      <body className={inter.className}>
+      <body className={fontFamily.className}>
         <NavBar />
         {children}
         <Footer />
